@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köpek Nüfus Yönetimi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <label for="dogCount">Köpek Sayısı (2m - 8m):</label>
+            <input type="range" id="dogCount" min="2000000" max="8000000" value="2000000" step="100000">
+            <span id="dogCountValue">2000000</span><br>
+
+            <label for="dogLife">Köpek Ömrü (1 - 5 yıl):</label>
+            <input type="range" id="dogLife" min="1" max="5" value="3">
+            <span id="dogLifeValue">3</span><br>
+
+            <label for="shelterCount">Barınak Sayısı (250 - 10000):</label>
+            <input type="range" id="shelterCount" min="250" max="10000" value="250" step="250">
+            <span id="shelterCountValue">250</span><br>
+
+            <label for="captureCapacity">Barınak Günlük Kapasitesis (1 - 200):</label>
+            <input type="range" id="captureCapacity" min="1" max="200" value="20">
+            <span id="captureCapacityValue">20</span><br>
+
+            <label for="method">Yöntem:</label>
+            <select id="method">
+                <option value="euthanasia">Ötenazi</option>
+                <option value="sterilization">Kısırlaştırma</option>
+            </select>
+        </div>
+        <div class="outputs">
+            <canvas id="monthlyCostChart"></canvas>
+            <canvas id="dogPopulationChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js?v=1.01"></script>
+</body>
+</html>
