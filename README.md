@@ -1,1 +1,1 @@
-# cozum
+In Turkey, the issue of stray dogs is being debated, with methods such as culling and sterilization being discussed. Of course, from a humanitarian perspective, the solution is quite clear. However, we can also see mathematically that sterilization is the only viable solution through this simulation.
